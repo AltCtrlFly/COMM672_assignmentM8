@@ -83,16 +83,12 @@ img {
         text-align: center;
         justify-content: center;
     }
-    /* .community {
+    .community {
         grid-template-columns: 1fr;
     }
     .event-block {
-        grid-column: 1fr 1fr;
-        grid-template-areas: 
-        "image"
-        "title"
-        "text";
-    } */
+        grid-column: span 1;
+    }
 }
 /* Media Query for iPad Air */
 @media screen and (min-width: 820px) and (max-width: 1180px) {
@@ -116,7 +112,6 @@ img {
         align-items: center;
     }
     .team-container {
-        /* flex-direction: column; */
         display: inline-flex;
         flex-wrap: wrap;
         align-content: space-evenly;
@@ -131,6 +126,12 @@ img {
         text-align: center;
         justify-content: center;
         padding: 50px;
+    }
+    .community {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .event-block {
+        grid-column: span 1;
     }
 }
 /**Header**/
