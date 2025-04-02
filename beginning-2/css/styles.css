@@ -39,101 +39,6 @@ h2 {
 img {
     width: 100%;
 }
-/* Media Query for iPhone 12 Pro */
-@media screen and (max-width: 844px) {
-    header {
-        display: none;
-    }
-    header .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .feature-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .testimonial-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .team-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .about .container {
-        text-align: center;
-    }
-    .team-member {
-        flex-direction: column;
-        text-align: center;
-    }
-    .feature-container {
-        flex-direction: column;
-        flex-direction: wrap;
-        justify-content: space-between;
-    }
-    .div .feature-page-block {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
-    .community {
-        grid-template-columns: 1fr;
-    }
-    .event-block {
-        grid-column: span 1;
-    }
-}
-/* Media Query for iPad Air */
-@media screen and (min-width: 820px) and (max-width: 1180px) {
-    header {
-        display: none;
-    }
-    header .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .feature-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .testimonial-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .team-container {
-        display: inline-flex;
-        flex-wrap: wrap;
-        align-content: space-evenly;
-    }
-    .feature-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .div .feature-page-block {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding: 50px;
-    }
-    .community {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .event-block {
-        grid-column: span 1;
-    }
-}
 /**Header**/
 header {
     background-color: #efefef;
@@ -345,4 +250,120 @@ footer {
 }
 footer img {
     width: 35px;
+}
+
+/* Media Query for iPad Air */
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+    header {
+        display: none;
+    }
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+    }
+    .feature-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .div .feature-page-block {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 50px;
+    }
+    .community {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .event-block {
+        grid-column: span 1;
+    }
+}
+/* Media Query for iPhone 12 Pro */
+@media screen and (max-width: 844px) {
+    header {
+        display: none;
+    }
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .about .container {
+        text-align: center;
+    }
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-container {
+        flex-direction: column;
+        flex-direction: wrap;
+        justify-content: space-between;
+    }
+    .div .feature-page-block {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .community {
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        flex-direction: wrap;
+    }
+    .event-block.featured {
+        grid-column: 1fr;
+        display: grid;
+        grid-template-areas: 
+        "image"
+        "title"
+        "text";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+    }
+    .event-block.featured h3 {
+    text-align: center;
+}
+    .event-block.featured p {
+    text-align: center;
+}
+    .event-block {
+        grid-column: 1fr;
+        justify-content: center;
+    }
 }
