@@ -341,12 +341,9 @@ footer img {
         justify-content: center;
     }
     .community {
-        grid-template-columns: 1fr 1fr;
-        flex-direction: column;
-        flex-direction: wrap;
+        grid-template-columns: 1fr;
     }
     .event-block.featured {
-        grid-column: 1fr;
         display: grid;
         grid-template-areas: 
         "image"
@@ -357,11 +354,11 @@ footer img {
         grid-column-gap: 20px;
     }
     .event-block.featured h3 {
-    text-align: center;
-}
+        text-align: center;
+    }
     .event-block.featured p {
-    text-align: center;
-}
+        text-align: center;
+    }
     .event-block {
         grid-column: 1fr;
         justify-content: center;
